@@ -76,7 +76,7 @@ const Users = () => {
       <div className='flex flex-col items-end px-4'>
         <span>
           {' '}
-          <Link to='/users'>
+          <Link to='/add-user'>
             <button className='pb-3 pointer items-end'>
               <span className='px-5 py-2 inline-flex text-lg leading-5 font-bold font-sans rounded-md bg-[#325aa8] text-white'>
                 <span className='pr-2 '>+</span> Add User

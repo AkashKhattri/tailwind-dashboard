@@ -9,6 +9,8 @@ import Products from './containers/products';
 import Users from './containers/Users';
 import Categories from './containers/Categories';
 import EditUsers from './containers/EditUsers';
+import AddUsers from './containers/AddUsers';
+import AddProduct from './containers/AddProduct';
 
 function App() {
   const location = useLocation();
@@ -36,6 +38,8 @@ function App() {
             <Route path='/categories' element={<Categories />} />
             <Route path='/users' element={<Users />} />
             <Route path='/edit-user' element={<EditUsers />} />
+            <Route path='/add-user' element={<AddUsers />} />
+            <Route path='/add-product' element={<AddProduct />} />
           </Routes>
         </div>
       </div>

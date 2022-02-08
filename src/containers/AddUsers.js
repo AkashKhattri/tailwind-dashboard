@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const EditUsers = () => {
+const AddUsers = () => {
   const [status, setStatus] = useState(false);
   return (
     <>
@@ -17,7 +17,7 @@ const EditUsers = () => {
           <div className='bg-gray-200 p-10 rounded-md'>
             <div className='md:col-span-1'>
               <h3 className='text-2xl font-bold  leading-6 text-gray-800'>
-                Edit User Information
+                Add User Information
               </h3>
             </div>
           </div>
@@ -160,7 +160,7 @@ const EditUsers = () => {
                     onChange={(e) => {
                       setStatus(!status);
                     }}
-                    className='mt-1 py-2 pl-3  checked:bg-green-500  shadow-sm sm:text-sm border-gray-300 rounded-md'
+                    className='mt-1 py-2 pl-3 checked:bg-green-500  shadow-sm sm:text-sm border-gray-300 rounded-md'
                   />
                 </div>
                 <div className='pt-3'>
@@ -197,7 +197,7 @@ const EditUsers = () => {
                   onClick={(e) => e.preventDefault()}
                   className='bg-[#325aa8] text-white py-2 my-2 px-10 rounded-md w-1/4 h-12 text-center text-2xl font-semibold'
                 >
-                  Update
+                  Add
                 </button>
               </div>
             </div>
@@ -208,4 +208,4 @@ const EditUsers = () => {
   );
 };
 
-export default EditUsers;
+export default AddUsers;
